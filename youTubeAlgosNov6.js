@@ -22,7 +22,13 @@ const sumUp = (n) =>    {
     return result;
 }
 
-console.log(sumUp(3)) //returns 6 because 3+2+1 = 6
+// console.log(sumUp(4)) //returns 6 because 3+2+1 = 6
 //this function is a linear time complexity (constant time), 
 //meaning a bigger number takes more time
 //proportionately...aka x = y 
+
+function sumUpMath(n) {
+    return (n / 2 ) * ( n + 1)
+}
+
+console.log(sumUpMath(3))
