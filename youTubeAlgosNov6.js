@@ -1,16 +1,3 @@
-/*
------------- KNAPSACK ------------
- You have a list of items, where every item has a value and a weight,
- You have a bag that holds a maximum weight of X.
- Write a program that maximizes the value of the items put into the bag whilst 
- ensuring that you don't ecxeed the maximum weight 
- */
-items = [
-  { id: "a", val: 10, w: 3 },
-  { id: "b", val: 6, w: 8 },
-  { id: "b", val: 3, w: 3 },
-];
-
 //why are companies asking for problems like this when they are rarely used in real life?
 //these algos are asked to check problem solving skills!!!!
 
@@ -33,7 +20,7 @@ function sumUpMath(n) {
 
 // console.log(sumUpMath(3))
 
-//===========================CHALLANGE TIME============================================//
+//===========================CHALLANGE TIME===========================//
 /*
     1. Write an algorithm that tales an array of nums in as an input and calculate the sum
     of those numbers
@@ -43,7 +30,7 @@ function sumUpMath(n) {
 
 //1.
 
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 const findSum = () => {
   let sum = 0;
@@ -53,6 +40,24 @@ const findSum = () => {
   return sum;
 };
 
-console.log(findSum(arr))
+// console.log(findSum(arr))
+
+//2.
 //the time complexity of this algo is linear or O(n) becasue the run time complexity 
 //goes up linieraly with the number of inputs. in this case 9.
+//for this particular problem there is no better time complexity solution UNLESS we know the 
+//size of the array beforehand.
+
+//side note, you could also write a solution to this problem using the .recude method BUT resulting 
+//in a on line of coding with seemingly an O(1) time complexity, but this IS NOT the case as .reduce
+//itself has a liner time complexity
+
+
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+const findSumOfArray = () =>    {
+    return arr.reduce((counter, currentValue) => counter + currentValue, 0);
+}
+
+console.log(findSumOfArray(arr))
+//again, seemingly better solution but in terms of time complexity it's still O(n)
