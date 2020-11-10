@@ -1,3 +1,5 @@
+// ------------------------JavaScript Cardio, Session 1------------------------//
+
 //CAHNNAGE 1: Reverse a String.
 //return a string in reverse
 //ex. unput hello ==> olleh
