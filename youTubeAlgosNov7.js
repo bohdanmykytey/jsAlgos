@@ -27,10 +27,10 @@ function isPallindrome(string2) {
 function reverseInt(int) {
   const revInt = int.toString().split("").reverse().join(""); //turns to string and reverses
 
-  return parseInt(revInt); //takes reversed string and turns back into intiger
+  // return parseInt(revInt); //takes reversed string and turns back into intiger
 }
 
-// console.log(reverseInt(12345))
+console.log(reverseInt(12345))
 
 //CHALLANGE 4: CAPATILIZE LETTERS
 //pass in a sentance and capitalize the first letter
@@ -111,4 +111,4 @@ function fizzbuzz() {
   }
 }
 
-console.log(fizzbuzz());
+// console.log(fizzbuzz());
