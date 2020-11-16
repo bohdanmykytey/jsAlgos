@@ -11,6 +11,31 @@ function addNums(...numbers) {
   return total;
 }
 
-console.log(addNums(1, 2, 3, 4, 5));
+// console.log(addNums(1, 2, 3, 4, 5));
 
 //CHALLANGE 2: SUM ALL PRIMES
+//pass in a number to loop up to and add all of the prime numbers.
+//A prime number us a whole number than 1 whos factors are only 1 and itself
+//ex: sumAllPrimes(10) === 17
+
+function sumAllPrimes(num) {
+  let total = 0;
+
+  function checkForPrime(i) {
+    for (let j = 2; j < i; j++) {
+      if (i % j === 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  for (let i = 2; i <= num; i++) {
+    if (checkForPrime(i)) {
+      total += i;
+    }
+  }
+  return total;
+}
+
+console.log(sumAllPrimes(10));
