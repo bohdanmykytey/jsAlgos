@@ -8,3 +8,4 @@ function reverseInt(...input) {
 
 console.log(reverseInt(123456))
 
+
