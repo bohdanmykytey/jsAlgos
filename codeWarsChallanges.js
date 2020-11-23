@@ -30,4 +30,18 @@ function lowestPosIntsSum(nums) {
     return total;
 }
 
-console.log(lowestPosIntsSum([10, 12, 60, 55, 2, 16, 75, 99]))
+// console.log(lowestPosIntsSum([10, 12, 60, 55, 2, 16, 75, 99]))
+
+// GIVEN A STRING, REPLACE EVERY LETTER WITH ITS POSITION IN THE ALPHABET
+
+const alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+
+function alphabetPosition(text) {
+    return text
+        .toLowerCase()
+        .replace(/[^a-zA-Z]/g, '')
+        .split('')
+        .map((letter) => alphabet.indexOf(letter) + 1)
+}
+
+console.log(alphabetPosition('The sun sets at twelve o\'clock'));
