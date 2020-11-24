@@ -44,4 +44,20 @@ function alphabetPosition(text) {
         .map((letter) => alphabet.indexOf(letter) + 1)
 }
 
-console.log(alphabetPosition('The sun sets at twelve o\'clock'));
+// console.log(alphabetPosition('The sun sets at twelve o\'clock'));
+
+//VOWEL COUNT: return the number of vowels in the given string.
+//a, e, i, o, u. are in question but not y.
+//the input string will only consist of lower case letters and/or spaces.
+
+function vowelCount(text) {
+    let count = 0;
+    for (const letter of text) {
+        if (letter == 'a' || letter == 'e' || letter == "i" || letter == "o" || letter == "u") {
+            count++;
+        }
+    }
+    return count;
+}
+
+console.log(vowelCount("abracadabra"));
