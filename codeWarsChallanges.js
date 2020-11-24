@@ -53,7 +53,7 @@ function alphabetPosition(text) {
 function vowelCount(text) {
     let count = 0;
     for (const letter of text) {
-        if (letter == 'a' || letter == 'e' || letter == "i" || letter == "o" || letter == "u") {
+        if(letter.match(/[aeiou]/g))    {
             count++;
         }
     }
