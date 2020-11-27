@@ -24,19 +24,30 @@ let house = {
 //map()
 //reduce()
 
-let keys = Object.keys(house)
+// let keys = Object.keys(house)
 // console.log(keys) //returns an array the object keys
-// console.log(Object.values(house)) //returns an array of object values
+
+// let values = Object.values(house)
+// console.log(values) //returns an array of object values
+
 // console.log(Object.entries(house))// returns object key value pairs with values together.
-// let entries = Object.entries(house)
+let entries = Object.entries(house)
 // console.log('Entries: ', entries)
 // console.log(entries[2])//return 'color: white'
 // console.log(`the color is ${entries[2][1]}`)//returns 'the color is  white'
 
-function houseKeys() {
-    for(let key of keys)    {
-        return key;
-    }
-}
+// function houseKeys() {
+//     for(const key of keys)    {
+//         return key;
+//     }
+// }
 
-console.log(houseKeys()) //returns doors
+//when called returns doors
+
+// function houseKeys() {
+//     values.forEach(value => {
+//         console.log(value);
+//     });
+// }
+
+// returns values of keys
