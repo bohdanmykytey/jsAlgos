@@ -54,7 +54,7 @@ function vowelCount(text) {
     let count = 0;
     for (const letter of text) {
         if(letter.match(/[aeiou]/g))    {
-            count++;
+           count++;
         }
     }
     return count;
