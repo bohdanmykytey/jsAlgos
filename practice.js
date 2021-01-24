@@ -17,4 +17,19 @@ function solution(A) {
     }
 }
 
-console.log(solution([1, 3, 6, 4, 1, 2]))
+// console.log(solution([1, 3, 6, 4, 1, 2]))
+
+
+//find out if input int is a pallindrome
+
+function isPalindrome(x) {
+    for(let i = 0; i < x.length; i++)   {
+        return i;
+    }
+    
+    // let halfWay = index / 2;
+    // x.toString()
+};
+
+console.log(isPalindrome(1212121))
+
